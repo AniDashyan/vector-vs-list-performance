@@ -55,7 +55,7 @@ This program shows that despite `std::list` being optimized for insertions and d
 
 3. **Run the Program in Terninal**: 
    ```bash
-   perf
+   ./perf
    ```
 
 The output will compare `std::vector` and `std::list` performance for insertion and deletion operations.
