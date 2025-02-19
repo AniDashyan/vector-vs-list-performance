@@ -50,7 +50,7 @@ This program shows that despite `std::list` being optimized for insertions and d
 
 2. **Compile the Code**:
    ```bash
-   g++ -std=c++11 -O2 main.cpp -o perf
+   g++ -std=c++17 -O2 main.cpp -o perf
    ```
 
 3. **Run the Program**: 
