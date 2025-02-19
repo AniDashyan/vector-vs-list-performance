@@ -85,12 +85,20 @@ Vector vs List performance when N= 50000
 ```
 
 ### Interpretation of the Output:
-1. **Vector Insertion**: The time taken to insert 50,000 random integers into a sorted vector (e.g., 1500 milliseconds).
-2. **Vector Deletion**: The time taken to delete all elements from the vector (e.g., 1000 milliseconds).
-3. **List Insertion**: The time taken to insert 50,000 random integers into a sorted list (e.g., 3000 milliseconds).
-4. **List Deletion**: The time taken to delete all elements from the list (e.g., 3500 milliseconds).
-5. **Overall Comparison**: The program shows how many times faster the vector is compared to the list for the given operations (e.g., `2.60x` faster).
 
+1. **Vector Insertion (274 ms)**: Inserting 50,000 random integers into a sorted vector took 274 milliseconds. Despite the need to shift elements during insertion, the contiguous memory layout and cache efficiency make `std::vector` faster.
+
+2. **Vector Deletion (717 ms)**: Deleting all elements from the vector took 717 milliseconds. While vector deletions require shifting elements, the total time remains relatively low due to cache efficiency.
+
+3. **Vector Total (991 ms)**: The total time for both insertion and deletion operations in the vector was 991 milliseconds.
+
+4. **List Insertion (4295 ms)**: Inserting the same 50,000 random integers into a sorted list took significantly longer (4295 milliseconds). The scattered memory layout of `std::list` and pointer traversals reduce insertion efficiency.
+
+5. **List Deletion (4439 ms)**: Deleting elements from the list took 4439 milliseconds, which is much slower than `std::vector`, mainly due to the overhead of navigating pointers between nodes in the list.
+
+6. **List Total (8734 ms)**: The combined time for both insertion and deletion in `std::list` was 8734 milliseconds, significantly longer than `std::vector`.
+
+7. **Vector is Faster (8x)**: The vector is 8 times faster overall compared to the list. This highlights the importance of memory layout and cache prefetching, as `std::vector` benefits from contiguous memory storage, while `std::list` suffers from pointer indirection and scattered memory.
 ---
 
 ## 4. Why is `std::vector` Faster?
