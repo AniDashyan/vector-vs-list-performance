@@ -38,17 +38,6 @@ This program shows that despite `std::list` being optimized for insertions and d
 ## 2. Build & Run
 
 ### Requirements
-- **C++ Compiler**: A modern C++ compiler that supports the C++11 standard or later (e.g., GCC, Clang, or MSVC).
-
-### Steps to Build and Run
-
-Here's a more concise version of the **Build & Run** section:
-
----
-
-## 2. Build & Run
-
-### Requirements
 - **C++11-compatible compiler** (e.g., GCC, Clang)
 - **Git** (optional)
 
