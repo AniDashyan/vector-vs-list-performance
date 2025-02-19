@@ -72,15 +72,15 @@ Vector vs List performance when N= 50000
 +------------------+------------+
 | Operation        | Time (ms)  |
 +------------------+------------+
-| Vector Insertion |      1500  |
-| Vector Deletion  |      1000  |
-| Vector Total     |      2500  |
+| Vector Insertion |        274 |
+| Vector Deletion  |        717 |
+| Vector Total     |        991 |
 +------------------+------------+
-| List Insertion   |      3000  |
-| List Deletion    |      3500  |
-| List Total       |      6500  |
+| List Insertion   |       4295 |
+| List Deletion    |       4439 |
+| List Total       |       8734 |
 +------------------+------------+
-| Vector is Faster |      2.60x |
+| Vector is Faster |          8x|
 +------------------+------------+
 ```
 
