@@ -53,7 +53,7 @@ This program shows that despite `std::list` being optimized for insertions and d
    g++ -std=c++17 -O2 main.cpp -o perf
    ```
 
-3. **Run the Program**: 
+3. **Run the Program in Terninal**: 
    ```bash
    perf
    ```
