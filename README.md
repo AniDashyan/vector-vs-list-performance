@@ -38,8 +38,8 @@ This program shows that despite `std::list` being optimized for insertions and d
 ## 2. Build & Run
 
 ### Requirements
-- **C++11-compatible compiler** (e.g., GCC, Clang)
-- **Git** (optional)
+- **C++ compiler**: A modern C++ compiler that supports the C++11 standard or later (e.g., GCC, Clang, or MSVC).
+- **Git**: To clone the repository (optional if you have the source code)
 
 ### Steps
 
