@@ -45,8 +45,7 @@ This program shows that despite `std::list` being optimized for insertions and d
 
 1. **Clone the Repository and Navigate to the Directory**:
    ```bash
-   git clone https://github.com/yourusername/vector_vs_list_performance.git
-   cd vector_vs_list_performance
+   git clone https://github.com/yourusername/vector_vs_list_performance.git && cd vector_vs_list_performance
    ```
 
 2. **Compile the Code**:
