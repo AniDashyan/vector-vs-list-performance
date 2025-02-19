@@ -42,19 +42,35 @@ This program shows that despite `std::list` being optimized for insertions and d
 
 ### Steps to Build and Run
 
-1. **Save the Code**: Copy the provided C++ code into a file, for example, `vector_vs_list.cpp`.
-2. **Compile the Code**: Use a terminal or command prompt to compile the code.
+Here's a more concise version of the **Build & Run** section:
+
+---
+
+## 2. Build & Run
+
+### Requirements
+- **C++11-compatible compiler** (e.g., GCC, Clang)
+- **Git** (optional)
+
+### Steps
+
+1. **Clone the Repository and Navigate to the Directory**:
    ```bash
-   g++ -std=c++11 -o vector_vs_list vector_vs_list.cpp
-   ```
-   This will generate an executable named `vector_vs_list`.
-   
-3. **Run the Executable**:
-   ```bash
-   ./vector_vs_list
+   git clone https://github.com/yourusername/vector_vs_list_performance.git
+   cd vector_vs_list_performance
    ```
 
-The program will output the performance comparison between `std::vector` and `std::list` for both insertion and deletion operations. It will also display the overall time taken for each container and how much faster the vector is compared to the list.
+2. **Compile the Code**:
+   ```bash
+   g++ -std=c++11 -O2 main.cpp -o perf
+   ```
+
+3. **Run the Program**: 
+   ```bash
+   ./program
+   ```
+
+The output will compare `std::vector` and `std::list` performance for insertion and deletion operations.
 
 ---
 
