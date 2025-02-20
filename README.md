@@ -35,28 +35,44 @@ This program shows that despite `std::list` being optimized for insertions and d
 
 ---
 
-## 2. Build & Run
+Here's the updated "Build & Run" section with the `cmake -DCMAKE_BUILD_TYPE=Release -S . -B build` command and the release configuration:
 
-### Requirements
+---
+
+### 2. Build & Run
+
+#### Requirements
 - **C++ compiler**: A modern C++ compiler that supports the C++11 standard or later (e.g., GCC, Clang, or MSVC).
-- **Git**: To clone the repository (optional if you have the source code)
+- **CMake**: Version 3.10 or later.
+- **Git**: To clone the repository (optional if you have the source code).
 
-### Steps
+#### Steps
 
 1. **Clone the Repository and Navigate to the Directory**:
-   ```bash
-   git clone https://github.com/AniDashyan/vector-vs-list-performance.git && cd vector-vs-list-performance
-   ```
 
-2. **Compile the Code**:
-   ```bash
-   g++ -std=c++17 -O2 main.cpp -o perf
-   ```
+    ```bash
+    git clone https://github.com/AniDashyan/vector-vs-list-performance.git && cd vector-vs-list-performance
+    ```
 
-3. **Run the Program in Terninal**: 
-   ```bash
-   ./perf
-   ```
+2. **Generate Build Files for Release Mode**:
+
+    ```bash
+    cmake  -S . -B build
+    ```
+
+3. **Build the Project**:
+
+    ```bash
+    cmake --build build --config Release
+    ```
+
+4. **Run the Program in Terminal**:
+
+    ```bash
+    ./build/vector-vs-list-performance
+    ```
+
+---
 
 The output will compare `std::vector` and `std::list` performance for insertion and deletion operations.
 
